@@ -1,0 +1,14 @@
+.added-to-cart-mess {
+    border: solid rgb(227, 227, 227) 1px;
+    position: fixed;
+    top: 87%;
+    left: -30%;
+    visibility: hidden;
+    transition: all 0.3s
+}
+
+.show-added-cart-mess {
+    visibility: visible;
+    left: 4%;
+}
+

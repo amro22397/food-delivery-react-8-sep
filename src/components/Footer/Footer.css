@@ -1,0 +1,12 @@
+.footer-social-icons img {
+    margin: 3px 8px;
+    cursor: pointer;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.05);
+}
+
+.footer-content-right ul li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

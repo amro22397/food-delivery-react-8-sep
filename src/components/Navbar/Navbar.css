@@ -1,0 +1,53 @@
+.navbar-menu {
+    gap: 20px;
+    
+
+
+}
+
+.navbar-right img {
+    height: 24px;
+}
+
+.navbar-menu li a {
+    font-family: 'Trebuchet MS';
+}
+
+.navbar-menu li a:hover {
+    color: rgb(87, 85, 85);
+}
+
+.sign-in-button {
+    border: solid 2px rgb(189, 186, 186);
+}
+
+.sign-in-button:hover {
+    background-color: rgb(189, 186, 186) ;
+    color: white;
+}
+.sign-in-button:active {
+    background-color: rgb(46, 40, 40) ;
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navbar-menu Link {
+    padding: 10px 0;
+}
+
+.navbar-menu li {
+    margin: 25px 0;
+}
+
+.dot {
+    
+    text-align: center;
+    color: rgb(200, 53, 53);
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 15px;
+
+}

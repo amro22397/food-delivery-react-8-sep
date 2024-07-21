@@ -1,0 +1,6 @@
+.header {
+    background-image: url('../../assets/header_img.png');
+    font-family: 'Trebuchet MS';
+    color: white;
+    border-radius: 20px;
+}

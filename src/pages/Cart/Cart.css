@@ -1,0 +1,99 @@
+.cart {
+    margin-top: 100px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+    margin: 10px 0;
+    color: black;
+}
+
+.cart-items-item img {
+    width: 50px;
+}
+
+.cart hr {
+    height: 1px;
+    background-color: aliceblue;
+    border: none;
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+}
+
+.cart-total-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+
+.cart-total-details p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(160, 154, 154);
+}
+
+#promo-input::placeholder {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cart-total-btns button {
+    
+    margin: 25px 10px 5px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fe761c;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e95500;
+  }
+
+  .clear-cart-message {
+    position: fixed;
+    left:28%;
+    top:28%;
+    background-color: rgb(237, 237, 237);
+    width: 40%;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: solid rgb(233, 227, 227) 1px;
+
+  }
+
+  .clear-message-btns button {
+    background-color: orange;
+    margin: 20px 10px 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 2px 15px;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    color: white;
+  }
