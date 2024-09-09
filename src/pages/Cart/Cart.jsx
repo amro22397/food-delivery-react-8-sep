@@ -19,9 +19,11 @@ const Cart = () => {
 
   return (
     
-    <div className='cart py-2'>
+    <div className='cart py-2 relative'>
       {!appear? "" : 
-      <div className="clear-cart-message">
+      <div className="clear-cart-message
+      fixed left-0 right-0 px-auto py-5 w-[45%]
+      mx-auto">
       <h2 
       className='text-xl font-sans text-gray-800'>Are you sure you want to clear all cart items?</h2>
       <div className="clear-message-btns">
@@ -35,14 +37,19 @@ const Cart = () => {
       }
 
 
-      <div className="go-to-food-menu mb-8" id='go-to-food-menu'>
+      <div className="go-to-food-menu mb-8
+      max-xl:flex max-xl:justify-center max-xl:items-center " id='go-to-food-menu'>
         <HashLink to='/#food-display'><button className='
         bg-orange-500 text-white font-sans px-4 py-[3px] rounded-3xl text-xl'>Go To Menu</button></HashLink>
       
       </div>
 
-      <div className="cart-items font-sans flex flex-row justify-between items-start">
-        <div className="cart-items-left">
+      <div className="cart-items font-sans flex flex-row justify-between items-start
+      max-xl:flex-col max-xl:items-center">
+
+        <div className="cart-items-left
+        max-xl:mb-10
+        max-sm:w-[75%] max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center max-xl:mx-auto">
         <span className='text-orange-900 text-2xl' style={{fontFamily: 'Tahoma'}}>Your orders :</span>
         <div class='cart-list flex flex-col mt-3 overflow-y-auto overflow-x-hidden h-[300px] w-[500px]'>
           {cart.map((item)=>{
@@ -51,7 +58,11 @@ const Cart = () => {
             </div>
         </div>
 
-        <div class='w-[48%]'>
+        <div class='w-[48%]
+        max-xl:w-[50%]
+        max-lg:w-[70%]
+        max-md:w-[85%]
+        max-sm:w-full'>
         <h2 className='text-2xl font-sans font-bold pb-3'>Cart Totals</h2>
           <div className="cart-total-details">
             <p>Subtotal</p>
@@ -67,6 +78,7 @@ const Cart = () => {
             <b>Total</b>
             <b>$ {total===0 ? 0 : total + 2}</b>
           </div>
+
           <div className="cart-total-btns">
           <button className='bg-orange-500 text-white px-4 py-1 rounded-md mt-3 font-mono text-lg tracking-widest'
           onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
@@ -78,7 +90,8 @@ const Cart = () => {
 
       <div className="cart-promo-code px-3 py-10 flex flex-row justify-center my-10">
         
-        <div className="cart-promocode w-[45%]">
+        <div className="cart-promocode w-[60%] flex flex-col
+        max-lg:w-[90%]" >
           <div>
             <p class='font-mono'>If you have promocode.. Enter</p>
             <div className="cart-promocode-input

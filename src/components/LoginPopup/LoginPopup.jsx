@@ -8,7 +8,9 @@ const LoginPopup = ({setShowLogin}) => {
     const [currState, setCurrState] = useState("Login")
 
   return (
-    <div className='login-popup w-[25%] px-4 py-3 rounded-md mx-auto absolute top-[15%] left-[37.5%]'>
+    <div className='login-popup w-[400px] px-4 py-3 rounded-md fixed top-[15%] left-0 right-0
+    mx-auto z-50 max-sm:w-[380px]
+    '>
         <form className="login-popup-container">
             <div className="login-popup-title flex flex-row justify-between items-center pb-3">
                 <h2 className='text-xl font-sans font-bold'>{currState}</h2>

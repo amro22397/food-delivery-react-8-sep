@@ -31,7 +31,10 @@ hover:bg-orange-500'><i class="fa-solid fa-cart-shopping pl-0"></i> ({itemAmount
 
       </div>
 
-      <div className="food-display-list flex flex-wrap my-5 mx-auto justify-center">
+      <div className="food-display-list grid grid-cols-4 my-5 mx-auto justify-center
+      max-xl:grid-cols-3
+      max-lg:grid-cols-2
+      max-sm:grid-cols-1">
         {food_list.map((item)=>{
           if (category==="All" || category===item.category) {
             return <FoodItem showAddedCartMessage={showAddedCartMessage}

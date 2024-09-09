@@ -74,13 +74,11 @@
   }
 
   .clear-cart-message {
-    position: fixed;
-    left:28%;
+    
     top:28%;
     background-color: rgb(237, 237, 237);
-    width: 40%;
     text-align: center;
-    padding: 20px 0px;
+
     border-radius: 5px;
     border: solid rgb(233, 227, 227) 1px;
 

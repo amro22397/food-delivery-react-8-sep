@@ -18,15 +18,6 @@
     cursor: pointer;
 }
 
-
-.explore-menu-list-item img {
-    width: 85%;
-    height: 85%;
-    border: solid rgb(237, 234, 234) 3px;
-    border-radius: 100%;
-    
-}
-
 .explore-menu-list-item p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

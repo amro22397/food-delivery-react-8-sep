@@ -12,9 +12,9 @@ const FoodItem = ({item, showAddedCartMessage}) => {
     const {_id, name, price, description, image} = item;
     
   return (
-    <div className='food-item flex flex-col items-center justify-center text-center px-0 pb-8 pt-4 w-[20%] '>
+    <div className='food-item flex flex-col items-center justify-center text-center px-0 pb-8 pt-4 '>
       <div className="food-item-img-container w-[90%] relative">
-        <img className='food-item-image rounded-md pb-2' src={image} alt="" />
+        <img className='food-item-image rounded-md pb-2 max-sm:w-full' src={image} alt="" />
         <img className='add rounded-3xl absolute bottom-4 right-2 w-10 h-10 cursor-pointer hover:opacity-85
             ' onClick={() => {
                 addToCart(item, _id); showAddedCartMessage()}} src={assets.add_icon_white} />

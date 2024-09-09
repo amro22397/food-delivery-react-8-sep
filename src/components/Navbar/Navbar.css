@@ -17,9 +17,7 @@
     color: rgb(87, 85, 85);
 }
 
-.sign-in-button {
-    border: solid 2px rgb(189, 186, 186);
-}
+
 
 .sign-in-button:hover {
     background-color: rgb(189, 186, 186) ;
@@ -32,14 +30,6 @@
 
 .active {
     text-decoration: underline;
-}
-
-.navbar-menu Link {
-    padding: 10px 0;
-}
-
-.navbar-menu li {
-    margin: 25px 0;
 }
 
 .dot {
