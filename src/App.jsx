@@ -16,7 +16,7 @@ const App = () => {
     <>
     <Navbar setShowLogin={setShowLogin} />
     {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
-    <div className='app w-[80%] m-auto'>
+    <div className='app w-[80%] max-lg:w-[95%] mx-auto'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cart' element={<Cart />} />

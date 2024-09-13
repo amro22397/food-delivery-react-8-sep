@@ -23,8 +23,8 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <>
-    <div className='navbar py-4 px-16 max-lg:px-24 my-0 bg-white w-[100%] items-center justify-between flex relative
-    max-md:px-14'>
+    <div className='navbar py-4 my-0 xl:max-w-[90%] max-w-[80%] max-lg:max-w-[90%]
+     mx-auto bg-white items-center justify-between flex relative'>
 
       
      <Link to='/'><img src={assets.logo} alt=""
@@ -50,7 +50,9 @@ const Navbar = ({setShowLogin}) => {
         
         <button onClick={() => setShowLogin(true)} 
         className='sign-in-button px-3 py-1 rounded-3xl
-        max-sm:hidden'>Sign In</button>
+        max-sm:hidden bg-orange-600 hover:bg-orange-700
+        active:bg-orange-800 transition-all duration-300
+        text-white'>Sign In</button>
 
         <LuMenu onClick={() => setShowSideBar(true)}
         className='ml-3 text-3xl cursor-pointer hover:text-gray-700
@@ -72,18 +74,34 @@ const Navbar = ({setShowLogin}) => {
        <ul className='navbar-menu flex flex-col justify-center items-center
        mt-14'>
  
-         <Link  to='/' onClick={()=>setMenu("home")} className={menu==="home" ? "active" : ""}> 
+         <Link  to='/' onClick={()=>{
+          setMenu("home");
+          setShowSideBar(false);
+         }} className={menu==="home" ? "active" : ""}> 
+
          <li style={{fontFamily: 'Trebuchet MS'}}><a href="#header">Home</a></li></Link>
-         <li onClick={() => setMenu("menu")} className={menu==="menu" ? "active" : ""}><a href="#explore-menu">Menu</a></li>
-         <li onClick={() => setMenu("mobile-app")} className={menu==="mobile-app" ? "active" : ""}><a href="#app-download">Mobile App</a></li>
-         <li onClick={() => setMenu("contact-us")} className={menu==="contact-us" ? "active" : ""}><a href="#footer">Contact Us</a></li>
+         <li onClick={()=>{
+          setMenu("menu");
+          setShowSideBar(false);
+         }} className={menu==="menu" ? "active" : ""}><a href="#explore-menu">Menu</a></li>
+
+         <li onClick={()=>{
+          setMenu("mobile-app");
+          setShowSideBar(false);
+         }} className={menu==="mobile-app" ? "active" : ""}><a href="#app-download">Mobile App</a></li>
+
+         <li onClick={()=>{
+          setMenu("contact-us");
+          setShowSideBar(false);
+         }} className={menu==="contact-us" ? "active" : ""}><a href="#footer">Contact Us</a></li>
          
          </ul>
          
          <div className="flex flex-row mt-5 ml-[21.5px] mb-3">
          <IoSearch className='cursor-pointer text-2xl' />
         <div className="navbar-search-icon px-4 flex flex-row">
-          <Link to='/cart'>
+          <Link to='/cart'
+          onClick={() => setShowSideBar(false)}>
           <FaCartShopping className='text-2xl'/>
           </Link>
         </div>

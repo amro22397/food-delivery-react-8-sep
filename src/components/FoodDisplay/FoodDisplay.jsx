@@ -44,7 +44,8 @@ hover:bg-orange-500'><i class="fa-solid fa-cart-shopping pl-0"></i> ({itemAmount
         })}
       </div>
 
-      <div className="added-to-cart-mess bg-gray-100 w-[30%] px-4 py-2 text-lg text-gray-900 font-sans rounded-md">
+      <div className="added-to-cart-mess bg-gray-100 w-[400px]
+      px-4 py-2 text-lg text-gray-900 font-sans rounded-md">
       <i class="fa-solid fa-circle-check pr-2 text-green-600"></i>
       Your item has been added to cart <br /> check it up ..
       </div>

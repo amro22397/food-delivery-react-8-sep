@@ -48,10 +48,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.cart-total-btns button {
-    
-    margin: 25px 10px 5px;
-}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

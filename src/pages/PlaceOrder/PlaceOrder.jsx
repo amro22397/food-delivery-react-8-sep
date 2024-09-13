@@ -14,9 +14,9 @@ const PlaceOrder = () => {
 
   return (
     <form className='place-order flex flex-row justify-between py-10
-    max-xl:flex-col max-xl:items-center'>
-         <div className='place-order-left h-full w-[50%]
-         max-xl:w-[70%]'>
+    max-xl:flex-col max-xl:items-center w-full'>
+         <div className='place-order-left w-[50%] h-full
+         max-xl:w-[95%]'>
            <p className='title text-3xl font-sans pb-5'>Dilevery Information</p>
            <div className="multi-fields
            max-md:flex max-md:flex-col max-md:w-full">
@@ -39,10 +39,10 @@ const PlaceOrder = () => {
          </div>
 
 
-       <div className="place-order-right w-[50%]
-       max-xl:w-[100%]">
-         <div className="cart-total px-3 flex flex-row justify-center my-10">
-           <div class='w-[65%]'>
+       <div className="place-order-right mx-auto 
+       max-xl:w-[100%] flex justify-center items-center">
+         <div className="cart-total flex flex-row justify-center my-10">
+           <div class=''>
            <h2 className='text-2xl font-sans font-bold pb-3'>Cart Totals</h2>
              <div className="cart-total-details">
              <p>Subtotal</p>
